@@ -1,0 +1,17 @@
+[package]
+name = "bunretsu"
+version = "0.1.0"
+authors = ["Denys Mentiei <endden@gmail.com>"]
+edition = "2021"
+license = "MIT"
+readme = "README.md"
+publish = false
+
+[dependencies]
+cortex-m = { version = "0.7", features = ["inline-asm"] }
+cortex-m-rt = "0.7"
+
+[profile.release]
+codegen-units = 1
+debug = true
+lto = true

@@ -1,0 +1,4 @@
+# TODO(dmi): #1.
+[build]
+# Cortex-M4F and Cortex-M7F (with FPU)
+target = "thumbv7em-none-eabihf"
