@@ -8,7 +8,11 @@ My custom firmware for the Corne keyboard, written in Rust.
 
 `TODO`
 
+
 ```bash
+# macOS: pre-built bare-metal toolchain for 23-bit arms
+$ brew install armmbed/formulae/arm-none-eabi-gcc
+
 # installs the arm target
 $ rustup target add thumbv7em-none-eabihf
 ```
@@ -20,6 +24,18 @@ $ rustup target add thumbv7em-none-eabihf
 ## Running
 
 `TODO`
+
+## Useful things
+
+`TODO`
+
+```bash
+# sanity check
+$ arm-none-eabi-readelf -A target/thumbv7em-none-eabihf/release/bunretsu
+
+# how much space is used for what
+$ arm-none-eabi-size -Ax target/thumbv7em-none-eabihf/release/bunretsu
+```
 
 ## nice!nano
 
