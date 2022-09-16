@@ -35,6 +35,9 @@ $ arm-none-eabi-readelf -A target/thumbv7em-none-eabihf/release/bunretsu
 
 # how much space is used for what
 $ arm-none-eabi-size -Ax target/thumbv7em-none-eabihf/release/bunretsu
+
+# disasm it!
+$ arm-none-eabi-objdump -d target/thumbv7em-none-eabihf/release/bunretsu
 ```
 
 ## nice!nano
