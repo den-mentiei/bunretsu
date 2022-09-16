@@ -2,3 +2,6 @@
 [build]
 # Cortex-M4F and Cortex-M7F (with FPU)
 target = "thumbv7em-none-eabihf"
+
+[target.'cfg(all(target_arch = "arm", target_os = "none"))']
+rustflags = ["-C", "link-arg=-Tlink.x"]
