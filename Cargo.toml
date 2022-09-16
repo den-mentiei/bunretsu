@@ -11,7 +11,16 @@ publish = false
 cortex-m = { version = "0.7", features = ["inline-asm"] }
 cortex-m-rt = "0.7"
 
+[profile.dev]
+panic = "abort"
+
 [profile.release]
+panic = "abort"
 codegen-units = 1
 debug = true
 lto = true
+
+[package.metadata.commands]
+check = "cargo watch -x 'check'"
+test = "cargo watch -x 'test'"
+run = "cargo watch -x 'run'"

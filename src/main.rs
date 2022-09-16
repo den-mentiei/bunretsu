@@ -4,14 +4,11 @@
 use core::panic::PanicInfo;
 use core::sync::atomic::{self, Ordering};
 
-use cortex_m::asm;
 use cortex_m_rt::entry;
 
 #[entry]
 fn main() -> ! {
-	loop {
-		asm::nop();
-	}
+	loop {}
 }
 
 #[inline(never)]
